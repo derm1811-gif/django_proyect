@@ -11,7 +11,7 @@ class vehicle:
         
     def desacelerar(self):
         self.speed-=10
-        print(f"el{self.brand} desacelero a {self.speed}km/h")
+        print(f"el{self.brand} bajo la velocidad{self.speed}km/h")
 
 #Creación de los objetos
 my_vehicle=vehicle("ferrari","verde","ABC312")
