@@ -4,11 +4,15 @@ class empleado(ABC):
     def __init__(self,nombre,documento,salario):
         self.nombre =nombre
         self.documento=documento
-        self.salario =salario
+        self.__salario =salario
         
     @abstractmethod
     def calcular_bonificacion(self):
         pass
+    
+    @property
+    def salario(self):
+        return self.__salario
     
     def mostrar_informacion(self):
         print(f"Nombre:{self.nombre}")

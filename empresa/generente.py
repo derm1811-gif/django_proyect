@@ -1,4 +1,4 @@
-from empresa.empleado import empleado
+from empleado import empleado
 
 class Gerente(empleado):
     def calcular_bonificacion(self):
